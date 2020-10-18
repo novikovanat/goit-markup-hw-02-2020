@@ -5,30 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="/"> <span>Web</span><span>Studio</span></a>
-            <ul>
-                <li><a href="/">Студия</a></li>
-                <li><a href="./portfolio.html">Портфолио</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+            <a href="/" class="link logo"><span>Web</span><span class="logo-color-header">Studio</span></a>
+            <ul class="header-menu">
+                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
+                <li><a href="/" class="link">Студия</a></li>
+                <li><a href="#contacts" class="link">Контакты</a></li>
             </ul>
         </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <ul class="header-address">
+            <li class="header-address-item"><a href="mailto:info@devstudio.com"
+                    class="link header-address-link">info@devstudio.com</a></li>
+            <li class="header-address-item"><a href="tel:+380961111111" class="link header-address-link">+38 096 111 11
+                    11</a></li>
         </ul>
     </header>
     <main>
         <ul>
-            <li><button>Все</button></li>
-            <li><button>Веб-сайты</button></li>
-            <li><button>Приложения</button></li>
-            <li><button>Дизайн</button></li>
-            <li><button>Маркетинг</button></li>
+            <li><button class="filter-button">Все</button></li>
+            <li><button class="filter-button">Веб-сайты</button></li>
+            <li><button class="filter-button">Приложения</button></li>
+            <li><button class="filter-button">Дизайн</button></li>
+            <li><button class="filter-button">Маркетинг</button></li>
         </ul>
         <ul>
             <li>
@@ -106,11 +109,11 @@
 
     </main>
     <footer>
-        <a href="/"> <span>Web</span><span>Studio</span></a>
+        <a href="/" class="link logo"> <span>Web</span><span class=logo-color-footer>Studio</span></a>
         <address id="contacts">
             <span>г. Киев, пр-т Леси Украинки, 26</span><br />
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a><br />
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a><br />
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
         </address>
     </footer>
 </body>
