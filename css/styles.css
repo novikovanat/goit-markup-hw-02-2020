@@ -109,11 +109,13 @@
 }
 
 :root {
-  --main-text-color: #757575, 100%;
+  --main-text-color: #757575;
   --accent-color: #2196f3;
-  --black: #212121, 100%;
-  --gray: #ffffff, 60%;
-  --white: #ffffff, 100%;
+  --black: #212121;
+  --gray: rgba(255, 255, 255, 0.6);
+  --white: #ffffff;
+  --dark-background-color: #2f303a;
+  --light-background-olor: #f5f4fa;
 }
 
 body {
@@ -128,6 +130,10 @@ ul {
   list-style-type: none;
 }
 
+address {
+  font-style: inherit;
+}
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -138,13 +144,30 @@ ul {
   color: var(--accent-color);
 }
 
-.header-menu {
+.header-information {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  background-color: var(--white);
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+}
+.navigation-menu {
+  display: flex;
+}
+
+.navigation-link {
   color: var(--black);
 }
+
+.header-contacts {
+  display: flex;
+}
+
 .header-address-link {
   font-weight: 500;
   font-size: 14px;
@@ -152,59 +175,99 @@ ul {
   letter-spacing: 0.02em;
 }
 
+.main-section {
+  background-color: var(--dark-background-color);
+}
+
 .order-button {
+  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white);
 }
 .filter-button {
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   color: var(--black);
-  background: #f5f4fa;
+  background: var(--light-background-olor);
 }
 
 .filter-button:hover,
 .filter-button:focus {
-  color: #ffffff;
+  color: var(--white);
   background-color: var(--accent-color);
 }
 
 .order-button:hover,
 .order-button:focus {
   color: var(--accent-color);
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 .section-title {
   color: var(--black);
 }
+
+h1.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--white);
+}
+
 h2.section-title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
+
 h3.section-title {
   line-height: 1.14;
   text-transform: uppercase;
+  font-size: 16px;
 }
 h4.section-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
+
+/*.team-member {
+  text-align: center;}*/
+
 .job-title {
   font-size: 16px;
   line-height: 1.19;
-  /*text-align: center;*/
   letter-spacing: 0.03em;
 }
+
+.project-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--black);
+}
+
+.project-title {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.footer {
+  background-color: var(--dark-background-color);
+  color: var(--gray);
+}
+.address {
+  color: var(--white);
+}
+
 .logo {
   font-family: Raleway;
   font-weight: bold;
